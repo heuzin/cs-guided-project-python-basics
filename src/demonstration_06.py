@@ -17,4 +17,16 @@ Examples:
 """
 def XO(txt):
     # Your code here
+    xCount = 0
+    oCount = 0
+    for n in txt:
+        if 'x' in n:
+            xCount= xCount + 1
+        if 'o' in n:
+            oCount = oCount +1
+    if (xCount == oCount):
+        return True
+    else:
+        return False
 
+print(XO("ooxx"))
